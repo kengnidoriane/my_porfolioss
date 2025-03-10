@@ -56,14 +56,14 @@ const Introduction = () => (
           Spécialisée dans la création d'expériences web modernes et intuitives
           avec React, TypeScript et les dernières technologies front-end.
         </p>
-        <div className="flex space-x-4">
+        {/* <div className="flex space-x-4">
           <Button variant="default">
             Voir mes projets
           </Button>
           <Button variant="outline">
             Me contacter
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
@@ -230,9 +230,9 @@ const Contact = () => {
                 required
               />
             </div>
-            <Button type="submit" className="w-full">
+            {/* <Button type="submit" className="w-full">
               Envoyer
-            </Button>
+            </Button> */}
           </form>
         </div>
       </div>
