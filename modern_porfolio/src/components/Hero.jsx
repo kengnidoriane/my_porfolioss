@@ -8,19 +8,22 @@ const Hero = () => {
     <section id="accueil" className="min-h-screen flex items-center bg-gradient-to-b from-blue-50 to-white pt-20">
     <div className="container mx-auto px-6">
       <div className="max-w-3xl">
+        <p>Hello I'm</p>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-          <TypewriterText text="Web Developer" />
+          Kengni Doriane
         </h1>
+        <h4 className="text-xl md:text-6xl font-bold text-gray-800 mb-6">
+          <TypewriterText text="Web Developer" />
+        </h4>
         <p className="text-xl text-gray-600 mb-8">
-          Spécialisée en développement front-end avec React et back-end avec Node.js.
-          Je crée des expériences web modernes et performantes.
+        Transforming Ideas into Powerful Digital Solutions
         </p>
         <div className="flex space-x-4">
           <Button className="bg-blue-600 hover:bg-blue-700">
             see my projets
           </Button>
           <Button variant="outline">
-            Contact Me
+            Get in touch
           </Button>
         </div>
       </div>

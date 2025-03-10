@@ -6,21 +6,21 @@ import {
 const Projects = () => {
     const projects = [
         {
-          title: "E-commerce Platform",
+          title: "Dev Blog",
           description: "Une plateforme e-commerce complète avec panier, paiement et gestion des commandes",
           image: "https://via.placeholder.com/400x300",
           tags: ["React", "Node.js", "MongoDB", "Stripe"],
           link: "#"
         },
         {
-          title: "Dashboard Analytics",
+          title: "Recipe App",
           description: "Tableau de bord avec visualisation de données en temps réel",
           image: "https://via.placeholder.com/400x300",
           tags: ["React", "D3.js", "Socket.io"],
           link: "#"
         },
         {
-          title: "Social Media App",
+          title: "Restaurant Site",
           description: "Application de réseau social avec messagerie instantanée",
           image: "https://via.placeholder.com/400x300",
           tags: ["React", "Firebase", "WebSocket"],
