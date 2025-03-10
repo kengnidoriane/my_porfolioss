@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section id="accueil" className="min-h-screen flex items-center bg-gradient-to-b from-blue-50 to-white pt-20">
+    <section id="home" className="min-h-screen flex items-center bg-gradient-to-b from-blue-50 to-white pt-20">
     <div className="container mx-auto px-6">
       <div className="max-w-3xl">
         <p>Hello I'm</p>
@@ -19,12 +19,17 @@ const Hero = () => {
         Transforming Ideas into Powerful Digital Solutions
         </p>
         <div className="flex space-x-4">
-          <Button className="bg-blue-600 hover:bg-blue-700">
-            see my projets
-          </Button>
-          <Button variant="outline">
-            Get in touch
-          </Button>
+          <a href="#projects">
+            <Button className="bg-blue-600 hover:bg-blue-700">
+              see my projets
+            </Button>
+          </a>
+          <a href="#contact">
+            <Button variant="outline">
+              Get in touch
+            </Button>
+          </a>
+        
         </div>
       </div>
     </div>
