@@ -5,6 +5,7 @@ import Projects from "./components/Projects"
 import Certifications from "./components/Certifications"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <AboutMe />
         <Skills />
         <Projects />
         <Certifications />

@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="container mx-auto px-6">
       <div className="max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-          <TypewriterText text="Développeuse Full Stack" />
+          <TypewriterText text="Web Developer" />
         </h1>
         <p className="text-xl text-gray-600 mb-8">
           Spécialisée en développement front-end avec React et back-end avec Node.js.
@@ -17,10 +17,10 @@ const Hero = () => {
         </p>
         <div className="flex space-x-4">
           <Button className="bg-blue-600 hover:bg-blue-700">
-            Voir mes projets
+            see my projets
           </Button>
           <Button variant="outline">
-            Me contacter
+            Contact Me
           </Button>
         </div>
       </div>

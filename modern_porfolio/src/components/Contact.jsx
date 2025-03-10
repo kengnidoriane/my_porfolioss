@@ -58,7 +58,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
                   Envoyer le message
                 </Button>
               </form>

@@ -2,11 +2,12 @@ import React from 'react'
 
 const NavLinks = ({ mobile }) => {
     const links = [
-        { href: "#accueil", text: "Accueil" },
-        { href: "#competences", text: "Compétences" },
-        { href: "#projets", text: "Projets" },
+        { href: "#accueil", text: "Home" },
+        { href: "#aboutme", text: "About Me" },
+        { href: "#competences", text: "Skills" },
+        { href: "#projets", text: "Projects" },
         { href: "#certifications", text: "Certifications" },
-        { href: "#contact", text: "Contact" }
+        { href: "#contact", text: "Contact Me" }
       ];
     
       return (
