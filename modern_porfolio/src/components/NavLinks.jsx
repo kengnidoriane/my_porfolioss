@@ -1,0 +1,27 @@
+import React from 'react'
+
+const NavLinks = ({ mobile }) => {
+    const links = [
+        { href: "#accueil", text: "Accueil" },
+        { href: "#competences", text: "Compétences" },
+        { href: "#projets", text: "Projets" },
+        { href: "#certifications", text: "Certifications" },
+        { href: "#contact", text: "Contact" }
+      ];
+    
+      return (
+        <div className={`${mobile ? 'flex flex-col space-y-4' : 'flex space-x-8'}`}>
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              {link.text}
+            </a>
+          ))}
+        </div>
+      );
+}
+
+export default NavLinks
