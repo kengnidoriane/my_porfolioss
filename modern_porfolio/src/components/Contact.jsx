@@ -12,6 +12,9 @@ const Contact = () => {
       });
     
       const [isLoading, setIsLoading] = useState(false);
+      const emailjServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const emailjsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,15 +22,15 @@ const Contact = () => {
 
         try {
           await emailjs.send(
-              import.meta.env.VITE_EMAILJS_SERVICE_ID,
-              import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+              emailjServiceId,
+              emailjsTemplateId,
               {
                   from_name: formData.name,
                   from_email: formData.email,
                   message: formData.message,
                   to_name: 'doriane Kengni',
               },
-              import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+              emailjsPublicKey
           );
 
           toast.success('Message envoyé avec succès!');
