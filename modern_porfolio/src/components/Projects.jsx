@@ -22,7 +22,7 @@ const Projects = () => {
         {
           title: "Restaurant Site",
           description: "Application de réseau social avec messagerie instantanée",
-          image: "",
+          image: "/images/oree.jpg",
           tags: ["HTML5", "Bootstrap", "Javascript"],
           link: "https://responsive-restaurant-webpage-omega.vercel.app/"
         }
