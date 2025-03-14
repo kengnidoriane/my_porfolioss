@@ -1,5 +1,9 @@
 import React, { useState} from 'react'
 import { Button } from "./ui/button";
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
+
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -7,9 +11,33 @@ const Contact = () => {
         message: ''
       });
     
-      const handleSubmit = (e) => {
+      const [isLoading, setIsLoading] = useState(false);
+
+      const handleSubmit = async (e) => {
         e.preventDefault();
-        // Logique d'envoi du formulaire à implémenter
+        setIsLoading(true);
+
+        try {
+          await emailjs.send(
+              import.meta.env.VITE_EMAILJS_SERVICE_ID,
+              import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+              {
+                  from_name: formData.name,
+                  from_email: formData.email,
+                  message: formData.message,
+                  to_name: 'doriane Kengni',
+              },
+              import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          );
+
+          toast.success('Message envoyé avec succès!');
+          setFormData({ name: '', email: '', message: '' });
+      } catch (error) {
+          toast.error('Erreur lors de l\'envoi du message.');
+          console.error('Error:', error);
+      } finally {
+          setIsLoading(false);
+      }
         console.log('Form submitted:', formData);
       };
     
@@ -58,8 +86,8 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                  Envoyer le message
+                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700" disabled={isLoading}>
+                    {isLoading ? 'Envoi en cours...' : 'Envoyer le message'}
                 </Button>
               </form>
             </div>

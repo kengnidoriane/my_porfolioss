@@ -1,6 +1,9 @@
 import React from 'react'
+import { useActiveSection } from './hooks/useActiveSection';
 
 const NavLinks = ({ mobile }) => {
+
+  const activeSection = useActiveSection();
     const links = [
         { href: "#home", text: "Home" },
         { href: "#aboutme", text: "About Me" },
@@ -16,7 +19,11 @@ const NavLinks = ({ mobile }) => {
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className={`transition-colors ${
+                activeSection === link.href.substring(1)
+                    ? 'text-blue-600 font-semibold'
+                    : 'text-gray-600 hover:text-gray-900'
+            }`}
             >
               {link.text}
             </a>
