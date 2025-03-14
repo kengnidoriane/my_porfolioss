@@ -25,7 +25,7 @@ const Header = () => {
         <nav className="container mx-auto px-6 py-4 bg-red">
           <div className="flex items-center justify-between">
             <span className="text-xl font-bold text-gray-800">
-              FKD.dev
+              FKD
             </span>
             
             <div className="md:hidden">

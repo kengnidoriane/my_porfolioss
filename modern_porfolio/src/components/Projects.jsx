@@ -9,27 +9,27 @@ const Projects = () => {
           title: "Dev Blog",
           description: "Une plateforme e-commerce complète avec panier, paiement et gestion des commandes",
           image: "https://via.placeholder.com/400x300",
-          tags: ["React", "Node.js", "MongoDB", "Stripe"],
+          tags: ["ReactJs", "Node.js", "MongoDB", "Tailwind CSS"],
           link: "#"
         },
         {
           title: "Recipe App",
           description: "Tableau de bord avec visualisation de données en temps réel",
           image: "https://via.placeholder.com/400x300",
-          tags: ["React", "D3.js", "Socket.io"],
+          tags: ["ReactJs", "CSS"],
           link: "#"
         },
         {
           title: "Restaurant Site",
           description: "Application de réseau social avec messagerie instantanée",
           image: "https://via.placeholder.com/400x300",
-          tags: ["React", "Firebase", "WebSocket"],
+          tags: ["HTML5", "Bootstrap", "Javascript"],
           link: "#"
         }
       ];
     
       return (
-        <section id="projets" className="py-20">
+        <section id="projects" className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-16">Mes Projets</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

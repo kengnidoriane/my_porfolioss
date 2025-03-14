@@ -2,29 +2,31 @@ import React from 'react';
 import {
   ExternalLink
 } from 'lucide-react';
+import IBM from '../assets/IBM_front-end_professional_certificate.pdf'
 
 const Certifications = () => {
   const certifications = [
     {
-      title: "Full Stack Web Development",
+      image: '../assets',
+      title: "IBM Front-End Developer",
+      organization: "IBM",
+      date: "2025",
+      credential: "Credential ID: K723PRKTK3O5",
+      link: IBM
+    },
+    {
+      title: "Responsive Web Design",
+      organization: "FreeCodeCamp",
+      date: "2023",
+      credential: "Credential ID: -",
+      link: "https://www.freecodecamp.org/certification/fossokengnidoriane/responsive-web-design"
+    },
+    {
+      title: "Javascript Algoriths and Data Structures",
       organization: "FreeCodeCamp",
       date: "2024",
-      credential: "Credential ID: ABC123",
-      link: "#"
-    },
-    {
-      title: "React - The Complete Guide",
-      organization: "Udemy",
-      date: "2023",
-      credential: "Credential ID: XYZ789",
-      link: "#"
-    },
-    {
-      title: "MongoDB Developer",
-      organization: "MongoDB University",
-      date: "2023",
-      credential: "Credential ID: MDB456",
-      link: "#"
+      credential: "Credential ID: -",
+      link: "https://www.freecodecamp.org/certification/fossokengnidoriane/javascript-algorithms-and-data-structures"
     }
   ];
 
@@ -45,7 +47,7 @@ const Certifications = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voir le certificat <ExternalLink size={16} className="ml-1" />
+                See the certificate <ExternalLink size={16} className="ml-1" />
               </a>
             </div>
           ))}
