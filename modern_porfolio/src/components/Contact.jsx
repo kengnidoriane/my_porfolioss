@@ -12,17 +12,16 @@ const Contact = () => {
       });
     
       const [isLoading, setIsLoading] = useState(false);
-      const emailjServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const emailjsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const emailjsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
-
         try {
           await emailjs.send(
-              emailjServiceId,
+              emailjsServiceId,
               emailjsTemplateId,
               {
                   from_name: formData.name,

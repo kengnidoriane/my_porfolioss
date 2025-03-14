@@ -15,16 +15,16 @@ const Projects = () => {
         {
           title: "Recipe App",
           description: "Tableau de bord avec visualisation de données en temps réel",
-          image: "https://food-recipe-app-blush-nine.vercel.app/",
+          image: "",
           tags: ["ReactJs", "CSS"],
-          link: "#"
+          link: "https://food-recipe-app-blush-nine.vercel.app/"
         },
         {
           title: "Restaurant Site",
           description: "Application de réseau social avec messagerie instantanée",
-          image: "https://responsive-restaurant-webpage-omega.vercel.app/",
+          image: "",
           tags: ["HTML5", "Bootstrap", "Javascript"],
-          link: "#"
+          link: "https://responsive-restaurant-webpage-omega.vercel.app/"
         }
       ];
     
