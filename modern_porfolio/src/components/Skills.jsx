@@ -26,7 +26,7 @@ const Skills = () => {
         },
         {
           icon: <Code className="w-8 h-8 text-red-600" />,
-          title: "Outils & Methods",
+          title: "Tools & Methods",
           items: ["Git", "Agile"]
         }
       ];
