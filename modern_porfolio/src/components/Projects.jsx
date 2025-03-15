@@ -5,33 +5,34 @@ import {
 
 const Projects = () => {
     const projects = [
+      
         {
-          title: "Dev Blog",
-          description: "Une plateforme e-commerce complète avec panier, paiement et gestion des commandes",
-          image: "https://via.placeholder.com/400x300",
-          tags: ["ReactJs", "Node.js", "MongoDB", "Tailwind CSS"],
-          link: "#"
-        },
-        {
-          title: "Recipe App",
-          description: "Tableau de bord avec visualisation de données en temps réel",
-          image: "",
-          tags: ["ReactJs", "CSS"],
+          title: "CuisineConnect",
+          description: "Discover recipes from around the world, tailored to your dietary preferences.",
+          image: "/images/cuisineconnect.jpg",
+          tags: ["ReactJs", "Tailwind Css"],
           link: "https://food-recipe-app-blush-nine.vercel.app/"
         },
         {
-          title: "Restaurant Site",
-          description: "Application de réseau social avec messagerie instantanée",
+          title: "Orée Restaurant Site",
+          description: "Responsive web site for a restaurant",
           image: "/images/oree.jpg",
           tags: ["HTML5", "Bootstrap", "Javascript"],
           link: "https://responsive-restaurant-webpage-omega.vercel.app/"
+        },
+        {
+          title: "e-plantShopping",
+          description: "Plant shopping project. the backend is still in progress ",
+          image: "https://kengnidoriane.github.io/e-plantShopping",
+          tags: ["ReactJs", "Node.js", "MongoDB", "Tailwind CSS"],
+          link: "#"
         }
       ];
     
       return (
         <section id="projects" className="py-20">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-16">Mes Projets</h2>
+            <h2 className="text-3xl font-bold text-center mb-16">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
