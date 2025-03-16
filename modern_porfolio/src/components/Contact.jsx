@@ -46,12 +46,12 @@ const Contact = () => {
       return (
         <section id="contact" className="py-20">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-16">Me Contacter</h2>
+            <h2 className="text-3xl font-bold text-center mb-16">Contact Me</h2>
             <div className="max-w-2xl mx-auto">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Nom
+                    Name
                   </label>
                   <input
                     type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700" disabled={isLoading}>
-                    {isLoading ? 'Envoi en cours...' : 'Envoyer le message'}
+                    {isLoading ? 'Sending in progress...': 'Send the message'}
                 </Button>
               </form>
             </div>
