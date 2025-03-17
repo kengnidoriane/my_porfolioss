@@ -20,18 +20,18 @@ const Projects = () => {
       link: "https://responsive-restaurant-webpage-omega.vercel.app/",
       github: "https://github.com/yourusername/oree-restaurant"
     },
-    {
-      title: "e-plantShopping",
-      description: "Plant shopping project. the backend is still in progress",
-      image: "/images/e-plantshopping.jpg",
-      tags: ["ReactJs", "Node.js", "MongoDB", "Tailwind CSS"],
-      link: "#",
-      github: "https://github.com/yourusername/e-plantshopping"
-    }
+    // {
+    //   title: "e-plantShopping",
+    //   description: "Plant shopping project. the backend is still in progress",
+    //   image: "/images/e-plantshopping.jpg",
+    //   tags: ["ReactJs", "Node.js", "MongoDB", "Tailwind CSS"],
+    //   link: "https://kengnidoriane.github.io/e-plantShopping/",
+    //   github: "https://github.com/yourusername/e-plantshopping"
+    // }
   ];
 
   return (
-    <section id="projects" className="py-20" role="region" aria-label="My Projects">
+    <section id="projects" className="py-20" aria-label="My Projects">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-16">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
