@@ -3,6 +3,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import IBM from '../assets/IBM_front-end_professional_certificate.pdf'
+import Meta from '../assets/Meta_front-end_professionnal_certificate.pdf'
 
 const Certifications = () => {
   const certifications = [
@@ -13,6 +14,14 @@ const Certifications = () => {
       date: "2025",
       credential: "Credential ID: K723PRKTK3O5",
       link: IBM
+    },
+    {
+      image: '../assets',
+      title: "Meta Front-End Developer",
+      organization: "Meta",
+      date: " March 2025",
+      credential: "Credential ID: DAW17SG902EM",
+      link: Meta
     },
     {
       title: "Responsive Web Design",
